@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ear Disease Detection - Result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, rgb(227, 227, 99), rgb(231, 172, 64));
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .back {
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .navbar-brand {
+        font-size: 24px; /* Increase font size */
+        color: white; /* Set text color to white */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Medical Diagnosis Software</a>
+        </div>
+      </nav>
+    <div class="container">
+        <h1>Ear Disease Detection</h1>
+        <div class="highlight">
+            <p>The predicted class is: <strong>{{ prediction }}</strong></p>
+        </div>
+        <div class="back">
+            <a href="/">Back to Upload</a>
+        </div>
+    </div>
+</body>
+
+</html>
